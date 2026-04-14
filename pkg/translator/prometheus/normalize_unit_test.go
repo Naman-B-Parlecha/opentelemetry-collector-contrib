@@ -19,6 +19,9 @@ func TestBuildCompliantPrometheusUnit(t *testing.T) {
 	require.Equal(t, "per_second", BuildCompliantPrometheusUnit("{objects}/s"))
 	require.Equal(t, "percent", BuildCompliantPrometheusUnit("%"))
 	require.Empty(t, BuildCompliantPrometheusUnit("1"))
+	require.Equal(t, "tebibytes", BuildCompliantPrometheusUnit("TiBy"))
+	require.Equal(t, "kilobytes", BuildCompliantPrometheusUnit("kBy"))
+	require.Equal(t, "kilobytes", BuildCompliantPrometheusUnit("KBy"))
 }
 
 func TestBuildCompliantMainUnit(t *testing.T) {

@@ -38,7 +38,7 @@ List of standard OpenTelemetry units that will be translated to [Prometheus stan
 | `KiBy`             | `kibibytes`                   |
 | `MiBy`             | `mebibytes`                   |
 | `GiBy`             | `gibibytes`                   |
-| `TiBy`             | `tibibytes`                   |
+| `TiBy`             | `tebibytes`                   |
 | `KBy`              | `kilobytes`                   |
 | `MBy`              | `megabytes`                   |
 | `GBy`              | `gigabytes`                   |

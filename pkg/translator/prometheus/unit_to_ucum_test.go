@@ -51,6 +51,14 @@ func TestUnitWordToUCUM(t *testing.T) {
 			input:    "percent",
 			expected: "%",
 		},
+		{
+			input:    "kilobytes",
+			expected: "kBy",
+		},
+		{
+			input:    "tebibytes",
+			expected: "TiBy",
+		},
 	} {
 		t.Run(fmt.Sprintf("input: \"%v\"", tc.input), func(t *testing.T) {
 			got := UnitWordToUCUM(tc.input)
